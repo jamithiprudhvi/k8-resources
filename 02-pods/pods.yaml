@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: hello-pod
 spec:
+  Namespace: roboshop
   containers:
   - name: hello-pod
     image: nginx
