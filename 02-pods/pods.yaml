@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: hello-pod
-spec:
   Namespace: roboshop
+spec:  
   containers:
   - name: hello-pod
     image: nginx
