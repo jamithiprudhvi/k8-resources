@@ -54,16 +54,16 @@ spec:
         volumeMounts:
         - name: nginx-logs
           mountPath: /var/log/nginx
-        - name: filebeat-config
+        - name: filebeat-config   
           mountPath: /usr/share/filebeat/filebeat.yml
-          subPath: filebeat.yml
-
+          subPath: filebeat.yml 
       volumes:
       - name: nginx-logs
         emptyDir: {}
       - name: filebeat-config
         configMap:
-            name: filebeat-config
-            items:
-              - key: filebeat.yml
-                path: filebeat.yml
+              name: filebeat-config
+              items:
+                - key: filebeat.yml
+                  path: filebeat.yml
+      
