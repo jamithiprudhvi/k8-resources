@@ -64,6 +64,6 @@ spec:
         configMap:
               name: filebeat-config
               items:
-                - key: filebeat.yml1
-                  path: filebeat.yml1
+                - key: filebeat.yml
+                  path: filebeat.yml
       
